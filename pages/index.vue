@@ -39,10 +39,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div class="text-center">
           <h1 class="text-5xl font-bold bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent mb-4">
-            AI 指示詞大全
+            ChatGPT 指示詞大全
           </h1>
           <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            精選實用的 AI 指示詞，提升工作效率與創作靈感
+            精選實用的 ChatGPT 指示詞，提升工作效率與創作靈感
           </p>
           
           <!-- 搜尋框 -->
@@ -187,9 +187,9 @@ const getCategoryButtonStyle = (category: string) => {
 // 設定頁面元資料
 useSeoMeta({
   title: 'Useful - 精選實用指示詞合集',
-  description: '精選實用的 AI 指示詞，涵蓋設計系統、程式語言、資料整理、求職面試四大類別，提升您的工作效率與創作靈感。',
+  description: '精選實用的 ChatGPT指示詞，涵蓋設計系統、程式語言、資料整理、求職面試四大類別，提升您的工作效率與創作靈感。',
   ogTitle: 'Useful',
-  ogDescription: '精選實用的 AI 指示詞，涵蓋設計系統、程式語言、資料整理、求職面試四大類別',
+  ogDescription: '精選實用的 ChatGPT指示詞，涵蓋設計系統、程式語言、資料整理、求職面試四大類別',
   ogImage: '/og-image.jpg',
   twitterCard: 'summary_large_image',
 })
