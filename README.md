@@ -173,7 +173,7 @@ const categoryColors = {
 
 ## 📞 聯繫我們
 
-- 🌐 **網站**: [AI 指示詞大全]()
+- 🌐 **網站**: [AI 指示詞大全](https://prompt-collection.vercel.app/)
 - 💬 **Discord**: [加入社群](https://discord.gg/BNVeh4TH)
 
 ## 📄 授權條款
