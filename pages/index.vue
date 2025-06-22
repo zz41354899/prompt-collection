@@ -79,7 +79,7 @@
                 : 'bg-white/5 text-gray-300 hover:bg-white/10 border border-gray-600/30 hover:border-gray-500/50'
             ]"
           >
-            全部 ({{ filteredPrompts.length }})
+            全部 ({{ prompts.length }})
           </button>
           <button
             v-for="category in categories"
@@ -92,7 +92,7 @@
                 : 'bg-white/5 text-gray-300 hover:bg-white/10 border border-gray-600/30 hover:border-gray-500/50'
             ]"
           >
-            {{ category }} ({{ getPromptsByCategory(category).length }})
+            {{ category }} ({{ getCategoryCount(category) }})
           </button>
         </div>
       </div>
@@ -131,6 +131,18 @@
           <div>
             <h3 class="text-2xl font-bold text-white mb-2">Useful</h3>
             <p class="text-neutral-400">打造 AI 共同學習的共學平台</p>
+          </div>
+          
+          <!-- 右側社交媒體 -->
+          <div class="mt-6 md:mt-0">
+            <a 
+              href="https://discord.gg/BNVeh4TH" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="text-neutral-400 hover:text-white transition-colors duration-300"
+            >
+              Discord
+            </a>
           </div>
         </div>
         
@@ -172,6 +184,11 @@ const filteredPrompts = computed(() => {
 
   return result
 })
+
+// 計算各類別的真實數量（不受搜尋影響）
+const getCategoryCount = (category: string) => {
+  return getPromptsByCategory(category).length
+}
 
 // 根據類別返回按鈕樣式
 const getCategoryButtonStyle = (category: string) => {
